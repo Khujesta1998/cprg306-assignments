@@ -1,3 +1,5 @@
+import StudentInfo from "./student.info";
+
 export default function studentInfo() {
   return (
     <div>
