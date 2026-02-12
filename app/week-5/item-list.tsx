@@ -36,7 +36,7 @@ export default function ItemList() {
         <button
           onClick={() => setSortBy("name")}
           className={`px-3 py-1 rounded ${
-            sortBy === "name" ? "bg-blue-500 text-white" : "bg-gray-200"
+            sortBy === "name" ? "bg-rose-300 text-black" : "bg-stone-700"
           }`}
         >
           Sort by Name
@@ -45,7 +45,7 @@ export default function ItemList() {
         <button
           onClick={() => setSortBy("category")}
           className={`px-3 py-1 rounded ${
-            sortBy === "category" ? "bg-blue-500 text-white" : "bg-gray-200"
+            sortBy === "category" ? "bg-rose-300 text-black" : "bg-stone-700"
           }`}
         >
           Sort by Category
@@ -54,12 +54,14 @@ export default function ItemList() {
         <button
           onClick={() => setSortBy("grouped")}
           className={`px-3 py-1 rounded ${
-            sortBy === "grouped" ? "bg-blue-500 text-white" : "bg-gray-200"
+            sortBy === "grouped" ? "bg-rose-300 text-black" : "bg-stone-700"
           }`}
         >
           Group by Category
         </button>
       </div>
+
+
 
       {/* Render Items */}
       {sortBy !== "grouped" && (
